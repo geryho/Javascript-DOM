@@ -3,5 +3,8 @@
     "live-server-extension": true,
     "live-preview-extension": true
   },
-  "cSpell.words": ["dari", "diubah", "judul", "lightgreen", "memakai"]
+  "cSpell.words": ["dari", "diubah", "judul", "lightgreen", "memakai", "Gery"],
+  "cSpell.ignoreRegExpList": [
+    "[a-zA-Z_$][a-zA-Z0-9_$]*" // Ignore all variable-like words
+  ]
 }

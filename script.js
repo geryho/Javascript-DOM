@@ -46,6 +46,23 @@ li2.style.backgroundColor = "Orange";
 
 //bisa ditulis dengan
 
-const sectionB = document.getElementById("b");
+/*const sectionB = document.getElementById("b");
 const p4 = sectionB.querySelector("p");
 p4.style.backgroundColor = "lightgreen";
+*/
+
+// const judul = document.getElementById("judul");
+// judul.innerHTML = "<em>Gery Ho</em>";
+
+// const judul = document.querySelector("#judul");
+// judul.style.color = "lightblue";
+// judul.style.backgroundColor = "salmon";
+
+// const judul = document.getElementsByTagName("h1")[0];
+// const a = document.querySelector("section#a a");
+// a.setAttribute("id", "link");
+// menambahkan attribut baru
+// judul.setAttribute("class", "nama");
+//a.removeAttribute("href");
+const p2 = document.querySelector(".p2");
+p2.classList.add("label");
