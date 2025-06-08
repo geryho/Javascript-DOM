@@ -64,5 +64,37 @@ p4.style.backgroundColor = "lightgreen";
 // menambahkan attribut baru
 // judul.setAttribute("class", "nama");
 //a.removeAttribute("href");
-const p2 = document.querySelector(".p2");
-p2.classList.add("label");
+// const p2 = document.querySelector(".p2");
+// p2.classList.add("label");
+
+//DOM Manipulation
+//buat elemen baru
+const pBaru = document.createElement("p");
+const teksPBaru = document.createTextNode("paragraph baru");
+//simpan tulisan ke paragraph
+pBaru.appendChild(teksPBaru);
+//simpan pBaru diakhir Section A
+const sectionA = document.getElementById("a");
+sectionA.appendChild(pBaru);
+
+const liBaru = document.createElement("li");
+const textLiBaru = document.createTextNode("li baru");
+liBaru.appendChild(textLiBaru);
+
+const ul = document.querySelector("section#b ul");
+const li2 = ul.querySelector("li:nth-child(2)");
+
+ul.insertBefore(liBaru, li2);
+
+const link = document.getElementsByTagName("a")[0];
+sectionA.removeChild(link);
+
+//node lama
+const sectionB = document.querySelector("section#b");
+const p4 = sectionB.querySelector("p");
+
+//node baru
+const h2 = document.createElement("h2");
+const textH2 = document.createTextNode("Judul Baru");
+h2.appendChild(textH2);
+sectionB.replaceChild(h2, p4);
