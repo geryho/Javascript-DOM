@@ -8,3 +8,28 @@ const textRColorButton = document.createTextNode("Random Color");
 rColorButton.appendChild(textRColorButton);
 rColorButton.setAttribute("type", "button");
 bColor.after(rColorButton);
+
+rColorButton.addEventListener("click", function () {
+  const r = Math.round(Math.random() * 255 + 1);
+  const g = Math.round(Math.random() * 255 + 1);
+  const b = Math.round(Math.random() * 255 + 1);
+  document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+});
+
+const rSlider = document.querySelector("input[name=rSlider]");
+const gSlider = document.querySelector("input[name=gSlider]");
+const bSlider = document.querySelector("input[name=bSlider]");
+
+const rgbDisplay = document.createElement("div");
+document.body.appendChild(rgbDisplay);
+function getBgValue() {
+  const r = rSlider.value;
+  const g = gSlider.value;
+  const b = bSlider.value;
+  document.body.style.backgroundColor = `RGB(${r},${g},${b})`;
+  rgbDisplay.textContent = `RGB: ${r}, ${g}, ${b}`;
+}
+
+[rSlider, gSlider, bSlider].forEach((slider) => {
+  slider.addEventListener("input", getBgValue);
+});
