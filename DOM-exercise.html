@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Exercise</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .lightblue {
+        background-color: lightblue;
+      }
+      .cbox{
+        width: 50px;
+        height : 25px;
+        margin: 30px auto;
+      }
+      .red{
+        background-color: red;
+      }.green{
+        background-color:green;
+      }.blue{
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bermain dengan Warna</h1>
+    <button type="button" id="button-color">Color</button>
+    </br>
+    <div class="cbox red"></div>
+    <input type="range" name="rSlider" min="0" max="255"/>
+    <div class="cbox green"></div>
+    <input type="range" name="gSlider" min="0" max="255" />
+    <div class="cbox blue"></div>
+    <input type="range" name="bSlider" min="0" max="255" />
+  <script src="color.js"></script>
+  </body>
+</html>
