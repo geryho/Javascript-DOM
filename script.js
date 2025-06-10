@@ -18,4 +18,3 @@ h1.style.fontSize = "30px";
 //->htmlCollection
 const p1 = document.getElementsByClassName("p1");
 p1[0].innerHTML = "Ini diubah dari JavaScript";
-console.log(2 + 2);
