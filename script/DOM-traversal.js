@@ -1,8 +1,12 @@
-const close = document.querySelector(".close");
+const closeBtn = document.querySelectorAll(".btn-close");
 const card = document.querySelector(".card");
 
-close.forEach((element) => {
-  element.addEventListener("click", (e) => {
-    e.parentElement.style.display = "none";
+closeBtn.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", (e) => {
+    const cards = e.target.closest(".card");
+    e.preventDefault();
+    if (cards) {
+      cards.remove();
+    }
   });
 });

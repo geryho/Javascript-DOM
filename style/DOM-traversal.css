@@ -32,6 +32,11 @@ body {
   position: relative;
 }
 
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
 .card .nama,
 .card .telp {
   display: block;
@@ -52,7 +57,7 @@ body {
   color: #aaa;
 }
 
-.card .close {
+.card .btn-close {
   font-size: 24px;
   font-weight: bold;
   color: #999;
